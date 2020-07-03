@@ -12,21 +12,34 @@
         width: 100%;
         background: #242c40;
     }
+    h1, h2, h3{
+        text-align: center;
+        color: #eeeeff;
+        display: none;
+    }
     .canvas{
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
     }
     img{
-        margin: auto;
-        max-width: 110%;
+        position: relative;
+        left: -50%;
     }
 </style>
 <body>
+<h2>У кого сегодня ДР..?</h2>
+<h3>у кого? у кого? у кого?</h3>
+<h1>У ВАСИ!</h1>
 <div class="canvas">
     <img src="/R.gif" alt="">
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script type="application/javascript">
+    setTimeout(() => {$("h2").show(easing="swing");}, 1000);
+    setTimeout(() => {$("h3").show(easing="swing");}, 3000);
+    setTimeout(() => {$("h1").show(easing="swing");}, 6000);
+</script>
 </body>
 </html>
